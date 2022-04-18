@@ -1,0 +1,278 @@
+/* reset css */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+/* index.html */
+
+.container {
+    position: absolute;
+    width: 500px;
+    top: 50%;
+    left: 50%;
+	padding: 29px;
+    border: solid 1px #C4C4C4;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+	text-align: center;
+	transform: translate(-50%, -50%);
+}
+
+.container img {
+	display: block;
+	margin: 0px auto 28px;
+}
+
+.container .txt-more {
+	display: inline-block;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.container a {
+	display: block;
+	margin-top: 32px;
+	padding: 17px 189px 15px 190px;
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 28px;
+	text-decoration: none;
+	color: white;
+	border-radius: 5px;
+	background-color: #2F80ED;
+}
+
+
+
+
+
+
+
+
+/* 위니브 로그인 디테일 */
+
+section.login {
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+    background-color: #fff;
+    width: 520px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+}
+
+.login h1 {
+    padding: 19px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    border-bottom: 1px solid #C4C4C4;
+}
+
+.login h1 a {
+    float: right;
+}
+
+.login .main {
+    padding: 26px 23px 24px;
+}
+
+.main h2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.main input.id, .main input.pw {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 14px 15px;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+    line-height: 20px;
+}
+
+.main input.id {
+    margin-top: 24px;
+    margin-bottom: 10px;
+}
+
+
+.main p.login-stay {
+    margin-top: 17px;
+    margin-bottom: 21px;
+    line-height: 20px;
+    color: #767676;
+}
+
+.main p.login-stay input[id="chkbox"] {
+    display: none;
+}
+
+.main p.login-stay input[id="chkbox"] + label::before {
+    content: '';
+    display: block;
+    width: 22px;
+    height: 22px;
+    float: left;
+    margin-top: -1px;
+    margin-right: 8px;
+    background-image: url('images/check-box.png');
+}
+
+.main p.login-stay input[id="chkbox"]:checked + label::before {
+    background-image: url('images/checked-box.png');
+}
+
+
+.main a.btn-login {
+    display: block;
+    background: #2F80ED;
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 14px 211px;
+    
+}
+
+.main .find {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.main .find a {
+    color: #767676;
+}
+
+.main .find a.btn-join::after {
+    content: '';
+    display: inline-block;
+    width: 2px;
+    height: 18px;
+    background-color: #767676;
+    vertical-align: bottom;
+    margin: 0 10px 0 12px;
+}
+
+.main p.or {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #767676;
+    margin-top: 30px;
+    position: relative;
+}
+
+.main p.or::before {
+    content: '';
+    position: absolute;
+    width: 210px;
+    height: 1px;
+    background-color: #C4C4C4;
+    top: 9px;
+    left: 0;
+}
+.main p.or::after {
+    content: '';
+    position: absolute;
+    width: 210px;
+    height: 1px;
+    background-color: #C4C4C4;
+    top: 9px;
+    right: 0;
+}
+
+
+.main ul.social-login {
+    margin-top: 20px;
+}
+
+.main ul.social-login li a {
+    display: block;
+    padding: 14px 0;
+    border: 1px solid #767676;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #767676;
+    margin-bottom: 10px;
+	text-decoration: none;
+}
+
+
+.main ul.social-login li:nth-child(1) a {
+    border-color: #767676;
+}
+.main ul.social-login li:nth-child(2) a {
+    border-color: #2D9CDB;
+}
+.main ul.social-login li:nth-child(3) a {
+    border-color: #00BF18;
+}
+.main ul.social-login li:nth-child(4) a {
+    border-color: #F2C94C;
+}
