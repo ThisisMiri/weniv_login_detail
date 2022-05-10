@@ -91,11 +91,6 @@ table {
 
 
 
-
-
-
-
-
 /* 위니브 로그인 디테일 */
 
 section.login {
@@ -125,7 +120,6 @@ section.login {
 .login h1 a {
     float: right;
 }
-
 .login .main {
     padding: 26px 23px 24px;
 }
@@ -178,7 +172,6 @@ section.login {
 .main p.login-stay input[id="chkbox"]:checked + label::before {
     background-image: url('images/checked-box.png');
 }
-
 
 .main a.btn-login {
     display: block;
